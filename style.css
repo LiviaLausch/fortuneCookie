@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+
+    font-size: 1.6rem;
+    color: #34355B;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    display: flex;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    padding: 4.8rem 6.4rem 6.4rem;
+    background-color: white;
+
+    border-radius: .6rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+
+    font-family: 'Montserrat', sans-serif;
+
+    margin-bottom: 1.4rem;
+}
+
+.home p {
+    font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.home img {
+    width: 24.8rem;
+    height: 19rem;
+}
+
+.home img:hover {
+  cursor: pointer;
+
+  -webkit-animation: vibrate-2 0.3s linear infinite both;
+	animation: vibrate-2 0.3s linear infinite both;
+}
+
+.card {
+    background-color: #E4EDF1;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 2rem;
+    margin-bottom: 6rem;
+    
+    -webkit-animation: scale-out-bottom 0.5s alternate-reverse cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: scale-out-bottom 0.5s alternate-reverse cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.card:hover{
+  background-color: #d2e3eb;
+}
+
+.card > p {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    color: black;
+    
+    max-width: 26rem;
+    margin-inline: auto;
+}
+
+.card p:hover {
+  font-weight: 600;
+}
+
+.fortune img {
+    margin-bottom: 6rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.fortune button {
+    display: block;
+    margin-inline: auto;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    background-color: #FF9500;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+.fortune button:hover {
+  font-size: 1.6rem;
+  background-color: #e98902;
+  cursor: pointer;
+
+}
+
+@-webkit-keyframes vibrate-2 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+@keyframes vibrate-2 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+
+@-webkit-keyframes scale-out-bottom {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
+
+@keyframes scale-out-bottom {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
